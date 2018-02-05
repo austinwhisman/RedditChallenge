@@ -1,0 +1,93 @@
+html{
+	font-size: 16px;	
+	font-family: Helvetica;
+	text-align: center;
+}
+p{
+	color: #3d405b;
+	margin: 0;
+	padding: 0;
+}
+
+#content{
+	width:90%;
+	margin: auto;
+	padding: 10px 5%;
+	background-color: #d9f1ee;
+	border-radius: 6px;
+
+}
+
+#examples{
+	width: 90%;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 20px auto;
+	background-color: #f4f1de;
+}
+
+.example, .zeros {
+	font-size: 18px;
+
+}
+
+.example {
+	color: #838596;
+	margin-left: 10px;
+}
+
+.zeros {
+	color: green;
+}
+
+#calculator {
+	width: 96%;
+	margin: auto;
+	padding: 2%;
+	background-color: #d0ebd8;
+}
+
+#results {
+	width: 96%;
+	padding: 0 2% 0 2%;
+	margin: 20px 0;
+}
+
+@media only screen and (min-width: 507px)  {
+	#content{
+		width: 40%;
+		padding: 14px;
+	}
+
+	#examples{
+		border-radius: 900px;
+		width: 330px;
+		margin: auto;
+		height: 330px;
+		text-align: center;
+		position: relative;
+	}
+	#examples > p {
+		position: absolute;
+		top: 125px;
+	}
+
+	#calculator {
+		width: 50%;
+		margin: 20px auto 10px auto;
+		border-radius: 6px;
+		padding: 10px;
+	}
+	#results {
+		background-color: #f8fcfb;
+		overflow-y: scroll;
+		width: 30%;
+		max-height: 300px;
+		min-width: 350px;
+		border: 1px solid black;
+		border-radius: 6px;
+		margin: 20px auto 10px auto;
+		padding: 6px;
+	}
+
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	
+</head>
+<body>
+	<div id="content">
+		<section>
+			<p>
+				This program is used to return the correct value of a particular number according to the rules of the Baum Sweet Sequence.
+				<br>
+				The Baum Sweet Sequence will take the binary value of a number larger than 0, search through the value, and look for an odd segment of 0s.
+			</p>
+		</section>
+		<section id="examples">
+			<p>
+				This means that if a 0 occurs, does it occur an odd amount of times
+				<br>
+				<span class = "example"> Example:</span>
+				0, 000, 00000
+				<br>
+				Or does it occur an even amount of times	
+				<br>
+				<span class = "example"> Example:</span>
+				00, 0000, 000000
+				<br>
+			</p>
+		</section>
+		<section>
+			<p>
+				If there are any odd sequences of 0's, the value will be a 0 in the Baume Sweet Sequence.
+				<br><br>
+				If there are not any odd sequences of 0's, the value will be a <font color= '#e17a5f'>1</font> in the Baume Sweet Sequence.
+			</p>
+		</section>
+	</div>
+
+	<div id ="calculator">
+		<p>
+			Enter in the Number you'd like to input into the sequence, and get your results!
+		</p> 
+		<input type="text" id="BaumSweetInput">
+		<button type="button" onClick="BaumSweetSequence(this)">
+			Press Me!
+		</button>
+	</div>
+
+	<div id="results">
+		<p>results Displayed here.</p>
+	</div>
+
+	<script src="JS/script.js"></script>
+</body>
+
+</html>
